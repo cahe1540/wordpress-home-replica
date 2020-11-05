@@ -1,5 +1,8 @@
 # wordpress-home-replica
 
+### Langauges
+* HTML, CSS
+
 ### About
 I constructed this project so that I may practice my HTML and CSS abilities. [view project](https://cahe1540.github.io/wordpress-home-replica/)
 
