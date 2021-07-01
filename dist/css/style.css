@@ -221,18 +221,24 @@ header input:focus{
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
+	position: relative;
+	right: 5rem;
 }
 
 .boxes .title{
 	font-size:40px;
 	margin-top:4rem;
 	margin-bottom:1rem;
+	position: relative;
+	left: 5rem;
 }
 
 .boxes .heading{
 	font-size:24px;
 	color:#8c8d86;
 	margin-bottom:3rem;
+	position: relative;
+	left: 5rem;
 }
 
 .boxes .wrapper{
@@ -246,6 +252,8 @@ header input:focus{
 	margin-bottom:3rem;
 	border:none;
 	line-height:26px;
+	position: relative;
+	left: 5rem;
 }
 
 .wrapper{
@@ -571,313 +579,5 @@ footer .signature{
 	text-align: center;
 	margin-bottom:60px;
 	margin-top:-50px;
-	color:#cfcfcf ;
-}
-
-/*media queries*/
-@media (max-width:1000px){
-	
-	/*header and nav bars*/
-	header{
-		height:9rem;
-	}
-
-	.main .upper{
-		margin-top:1rem;
-		display:flex;
-		flex-direction:column;
-		justify-content:center;
-		align-items:center;
-	}
-
-	.upper input{
-		height:1.8rem;
-		width:16.5rem;
-		background:#191e22;
-		font-size:12.5px;
-		border:none;
-		border-bottom:#303539 solid 1px;
-		color:#fff;
-		position:relative;
-		top:.5rem;
-	}
-
-	.menu-btn{
-		display:block;
-		color:#888888;
-		position: relative;
-		right:3rem;
-		bottom:1.3rem;
-	}
-	
-	.lower .button-1{
-		display:none;
-	}
-
-	.whitespace.not-visible{
-		display:flex;
-		flex-direction:row;
-		justify-content: center;
-		align-items: center;
-		color:#333333;
-		height:6rem;
-	}
-
-	.menu #nav.show{
-		display:grid;
-		position:absolute;
-		top:9rem;
-		left:0px;
-		grid-gap: 1.5rem;
-		background:#23282c;
-		width:12rem;
-		z-index:2;
-	}
-
-	.menu #nav{
-		display:grid;
-		position:absolute;
-		top:9rem;
-		left:-500px;
-		grid-gap: 1.5rem;
-		background:#23282c;
-		width:12rem;
-		z-index:2;
-		
-	}
-
-	.menu #nav li{
-		text-align:left;
-		margin-left:2rem;
-	}
-
-	/*whitespace section*/
-	.not-visible{
-		display:block;
-	}
-
-	.whitespace{
-		display:flex;
-		flex-direction: column;
-		align-items:center;
-		font-size:21px;
-	}
-
-	.whitespace .button-1{
-		color:#fff;
-		text-decoration: none;
-		position:relative;
-		left:.5rem;
-		top:.5rem;
-		padding:.5rem 1.2rem;
-		font-size:15px;
-	}
-
-	/*showcase 1*/
-	.sub-1{
-		height:290px;
-		background-color: #0073aa;
-		color:#fff;
-		display:flex;
-		flex-direction:column;
-
-	}
-
-	.sub-1 #title-1{
-		font-size:45px;
-		width:24rem;
-		text-align: center;
-	}
-
-	.sub-1 #text-1{
-		font-size:15px;
-		line-height: 1.8rem;
-		width:24rem;
-	}
-
-	/*showcase 2*/
-	.sub-2 .p1{
-		width:23rem;
-		font-size:18px;
-	}
-
-	.sub-2 .p1{
-		/*could not replicate same effect as original site*/
-		/*not sure how they did it, looks like they used 2 pictures maybe?*/
-		/*the cellphone and the background with the cellphone with z-index greater than bg?*/
-	}
-
-	.sub-2 .p2{
-		width:100%;
-		font-size:18px;
-	}
-
-	.showcase{
-		background:none;
-	}
-
-	.showcase img{
-		width:100%;
-		height:auto;
-	}
-
-	/*foot (after showcase image)*/
-	.foot{
-		width:100%;
-		height:1px;
-	}
-
-	.foot p{
-		position:relative;
-		bottom:10rem;
-	}
-
-	/*boxes*/
-	.boxes{
-		height:175vh;
-	}
-
-	.boxes .heading{
-		font-size:16px;
-	}
-
-	.boxes .wrapper{
-		display:grid;
-		grid-template-columns: repeat(2, 1fr);
-		position:relative;
-		left:1px;
-
-		
-	}
-
-	.boxes .foot{
-		width:93%;
-		position: relative;
-		top:7rem;
-	}
-
-	.wrapper .cards{
-		border:none;
-		width:8.6rem;
-	}
-
-	.cards.card1,.cards.card3, .cards.card5, .cards.card7{
-		border-right:#efefef 1px solid;
-	}
-
-	.cards.card1,.cards.card2, .cards.card3, .cards.card4, .cards.card5, .cards.card6{
-		border-bottom:#efefef 1px solid;
-	}	
-
-	.foot p{
-		position:relative;
-		bottom:5rem;
-	}
-
-	/*community section*/
-	.community{
-		height:116vh;
-		width:100%;
-	}
-
-	.community .heading{
-		display:none;
-	}	
-
-	.community .wrapper{
-		position:relative;
-		top:19.5rem;
-		width:100%;
-	}
-
-	.community .wrapper .text{
-		width:88%;
-		margin-left:1rem;
-		font-size:19px;
-		position:relative;
-		left:2rem;
-	}
-
-	.community .wrapper .title{
-		width:88%;
-		margin-left:1rem;
-		position:relative;
-		left:2rem;
-	}
-
-	.community .wrapper .button{
-		width:55%;
-		height:2.1rem;
-		margin-left:1rem;
-		position:relative;
-		left:2rem;
-	}
-
-	/*get section*/
-	.get .wrapper{
-		text-align: center;
-		width:100%;
-		height: 25rem;
-	}
-
-	.get .wrapper .title{
-		position:relative;
-		font-size:24px;
-		left:1.3rem;
-	}
-
-	.get .wrapper .text{
-		display:none;
-	}
-
-	.get .wrapper .button{
-		position:relative;
-		left:1.6rem;
-		padding:.6rem 1.5rem;
-	}
-
-	/*promos section*/
-	.promos{
-		height:50rem;
-	}
-	.promos .wrapper{
-		display:grid;
-		grid-template-columns: repeat(2,1fr);
-		position: relative;
-		right:3.8rem;
-	}
-
-	.box2{
-		width:115%;
-	}
-
-	.box3{
-		width:115%;
-	}
-
-	.box4{
-		position:relative;
-		left:3rem;
-	}
-
-	/*footer*/
-	footer{
-		height:50rem;
-	}
-	footer .wrapper{
-		display:grid;
-		grid-template-columns: repeat(2, 1fr);
-		margin-left:9rem;
-	}
-
-	footer #one{
-		position: relative;
-		top:.5rem;
-	}
-
-	footer .signature{
-		position: relative;
-		top:19rem;
-		right:.6rem;
-	}
+	color:#cfcfcf;
 }
